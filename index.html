@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <html lang="en"
+    <head>
+        <meta charset="UTF-8" />"
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />"
+        <title>Rosebud Kitten Rescue</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>🌹 Rosebud Kitten Rescue 🌹</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="adopt.html">Adopt</a>
+                <a href="help.html">Hot to Help</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Welcome!</h2>
+            <p>We are a small growing Kitten Rescue dedicated to giving kittens and their Moms a safe start in life. 💛🐾</p>
+            <p>Meet some of our adorable Kittens ready for Adoption!</p>
+           <section id="kitten-slideshow" class="slideshow-container">
+  <div class="slide fade">
+    <img src="images/Meowsy.jpg" alt="Kitten 1">
+    <div class="caption">Female 11 wks old</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="images/Dini.jpg" alt="Kitten 3">
+    <div class="caption">PFemale 11 weeks old</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="images/Smudge.jpg" alt="Kitten 4">
+    <div class="caption">Male 11 weeks old</div>
+  </div>
+
+    <div class="slide fade">
+      <img src="images/Chloe.JPG" alt="Kitten 2">
+      <div class="caption">Female 11 weeks old</div>
+    </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</section>
+
+            <p><strong>Adoption Fee:</strong> $75.00 (Covers Spy/Neuter and first shots)</p>
+            <p>To donate: <strong>Cash App: $KittyRose8407</strong>
+            </main>
+
+            <footer>
+                <p>&copy; 2025 Rosebud Kitten Rescue</p>
+            </footer>
+
+            <script>
+  let slideIndex = 0;
+  showSlides(slideIndex);
+
+  function changeSlide(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+  }
+
+  // Optional: Auto slide every 5 seconds
+  setInterval(() => changeSlide(1), 5000);
+</script>
+    </body>
+    </html>
