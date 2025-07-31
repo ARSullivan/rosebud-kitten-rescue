@@ -1,29 +1,83 @@
-<DOCTYPE html>
-    <html lang="en">
-        <hread>
-            <meta charset="en">
-            <title>Stray Cats Needing Homes</title>
-            <link rel="stylesheet" herf="style.css">
-        </head>
-        <body>
-            <header>
-                <div class="logo-container">
-                    <a href="index.htme"><img src="images/logo.png" alt="Rosebud kitten Rescue logo"</a>  
-                </div>
-                <h1>Stray Cats Seeking Fur-Ever Homes</h1>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="adopt.html">Adopt</a>
-                    <a herf="strays.html">Strays</a>
-                    <a href="Help.html">Help</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Stray Cats Seeking Fur-Ever Homes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-            <main>
-                <p>We are also trying to help local strays find loving homes. Check back soon for more photos and info!</p>
-            </main>
-        </body>
+  <body>
+    <header class="site-header">
+          <div class="banner-content">
+              <img src="images/logo.png" alt="Rosebud Kitten Rescue Logo" class="logo" />
+              </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="adopt.html">Adopt</a>
+                <a href="strays.html">Strays</a>
+                <a href="help.html">How to Help</a>
+                <a href="contact.html">contact</a>
+            </nav>
+        </header>
 
-    </html>
+    <main>
+      <p>We are also trying to help local strays find loving homes. Check back soon for more photos and info!</p>
+
+     
+<section class="stray-list">
+  <div class="cat-card">
+    <img src="images/Luna.jpg" alt="Luna" />
+    <h2>Luna</h2>
+    <p>Mother to the four kittens in the rescue.</p>
+    <ul class="cat-info">
+        <li><strong>Age:</strong> Unknown</li>
+        <li><strong>Sex:</strong> Female</li>
+        <li><strong>Adoption Fee:</strong> $75</li>
+    </ul>
+  </div>
+
+  <div class="cat-card">
+    <img src="images/Nibbles2.jpg" alt="Nibbles" />
+    <h2>Nibbles</h2>
+    <p>Sweet old man looking for a lap to sleep in.</p>
+    <ul class="cat-info">
+        <li><strong>Age:</strong> Unknown</li>
+        <li><strong>Sex:</strong> Male</li>
+        <li><strong>Adoption Fee:</strong> $75</li>
+    </ul>
+  </div>
+
+  <div class="cat-card">
+    <img src="images/LittleBit2.jpg" alt="Little Bit" />
+    <h2>Little Bit</h2>
+    <p>Playful and cuddly, looking for people to play and cuddle with.</p>
+    <ul class="cat-info">
+        <li><strong>Age</strong> 1 year</li>
+        <li><strong>Sex:</strong> Male</li>
+        <li><strong>Adoption Fee:</strong> $75</li>
+    </ul>
+  </div>
+</section>
+
+<h3>Adoption Application</h3>
+  <p>Please fill out the form below and we’ll contact you soon:</p>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="address">Your Address:</label><br>
+    <input type="text" id="address" name="address"><br><br>
+
+    <label for="message">Why do you want to adopt?</label><br>
+    <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+    <button type="submit">Submit Application</button>
+
+    </main>
+  </body>
+</html>
