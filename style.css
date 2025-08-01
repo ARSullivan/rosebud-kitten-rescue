@@ -115,6 +115,16 @@ footer {
   color: #666;
 }
 
+.cat-info {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 0.95em;
+}
+.cat-info li {
+  margin-bottom: 6px;
+}
                     
 /* ========================
    FORM STYLES
