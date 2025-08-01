@@ -79,53 +79,16 @@ footer {
    STRAY CAT CARDS
    ======================== */
 .stray-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.cat-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 300px;
-  padding: 16px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  margin-top: 2em;
 }
 
-.cat-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
+.stray-list img {
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.cat-card h2 {
-  margin: 0 0 8px;
-  color: #444;
-}
-
-.cat-card p {
-  margin: 0;
-  font-size: 0.95em;
-  color: #666;
-}
-
-.cat-card ul.cat-info {
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin: 10px 0;
-  text-align: left;
-  font-size: 0.95em;
-}
-
-.cat-card ul.cat-info li {
-  margin-bottom: 6px;
-}           
+         
 /* ========================
    FORM STYLES
    ======================== */
