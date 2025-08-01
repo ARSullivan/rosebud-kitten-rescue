@@ -115,17 +115,17 @@ footer {
   color: #666;
 }
 
-.cat-info {
-  list-style: none;
-  padding: 0;
+.cat-card ul.cat-info {
+  list-style: none !important;
+  padding-left: 0 !important;
   margin: 10px 0;
   text-align: left;
   font-size: 0.95em;
 }
-.cat-info li {
+
+.cat-card ul.cat-info li {
   margin-bottom: 6px;
-}
-                    
+}           
 /* ========================
    FORM STYLES
    ======================== */
